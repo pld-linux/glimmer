@@ -2,10 +2,11 @@ Summary:	glimmer - simple code editor
 Summary(pl):	glimmer - prosty edytor kodu ¼ród³owego
 Name:		glimmer
 Version:	1.2.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Tools
 Source0:	http://download.sourceforge.net/glimmer/%{name}-%{version}.tar.gz
+Patch0:		%{name}-desktop.patch
 URL:		http://glimmer.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -31,6 +32,7 @@ Glimmer jest prostym narzêdziem s³u¿±cym do edycji kodu ¼ród³owego.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 rm -f missing aclocal.m4
