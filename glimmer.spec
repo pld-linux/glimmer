@@ -6,7 +6,7 @@ Release:	1
 License:	GPL
 Group:		Development/Tools
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/1.99/%{name}-%{version}.tar.bz2
-# Source0-md5:	ca0a856b58f91b1bdef7f0828b31490a
+# Source0-md5:	59d6324bab435f85f73b1ffb93afdcfe
 Patch0:		%{name}-printfix.patch
 URL:		http://glimmer.sourceforge.net/
 BuildRequires:	autoconf
