@@ -2,7 +2,7 @@ Summary:	glimmer - simple code editor
 Summary(pl):	glimmer - prosty edytor kodu ¼ród³owego
 Name:		glimmer
 Version:	1.2.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Tools
 Source0:	http://download.sourceforge.net/glimmer/%{name}-%{version}.tar.gz
@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	desktopdir=%{_applnkdir}/Development/Editors
+	desktopdir=%{_applnkdir}/Editors
 
 %find_lang %{name} --with-gnome
 
@@ -62,5 +62,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/glimmer/languages
 %{_datadir}/glimmer/scripts
-%{_applnkdir}/Development/Editors/*
+%{_applnkdir}/Editors/*
 %{_pixmapsdir}/*
