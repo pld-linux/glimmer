@@ -20,7 +20,6 @@ Obsoletes:	CodeCommander-devel
 Obsoletes:	CodeCommander
 Obsoletes:	latte
 
-%define		_prefix		/usr/X11R6
 %define		_pixmapsdir	%{_datadir}/pixmaps
 
 %description
