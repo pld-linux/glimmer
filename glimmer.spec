@@ -2,7 +2,7 @@ Summary:	glimmer - simple code editor
 Summary(pl):	glimmer - prosty edytor kodu ¼ród³owego
 Name:		glimmer
 Version:	1.0.1
-Release:	1
+Release:	2
 LIcense:	GPL
 Group:		Development/Tools
 Group(de):	Entwicklung/Werkzeuge
