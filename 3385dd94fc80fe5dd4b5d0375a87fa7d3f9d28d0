@@ -1,0 +1,1 @@
+- removed CXXFLAGS (glimmer is rewritten in C)
