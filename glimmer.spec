@@ -1,8 +1,8 @@
 Summary:	glimmer - simple code editor
 Summary(pl):	glimmer - prosty edytor kodu ¼ród³owego
 Name:		glimmer
-Version:	1.0.1
-Release:	3
+Version:	1.0.3
+Release:	1
 LIcense:	GPL
 Group:		Development/Tools
 Group(de):	Entwicklung/Werkzeuge
@@ -13,7 +13,6 @@ URL:		http://glimmer.sourceforge.net/
 BuildRequires:	gnome-libs-devel
 BuildRequires:	ORBit-devel
 BuildRequires:	libstdc++-devel
-BuildRequires:	python-devel >= 2.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	CodeCommander-devel
 Obsoletes:	CodeCommander
@@ -35,7 +34,8 @@ LATTE jest prostym narzêdziem s³u¿±cym do edycji kodu ¼ród³owego.
 %build
 CXXFLAGS="%{rpmcflags} -fno-rtti -fno-exceptions"
 %configure \
-	--enable-gnome
+	--enable-gnome \
+	--disable-python
 
 %{__make}
 
@@ -58,5 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/glimmer
+%{_datadir}/gnome/help/glimmer
 %{_applnkdir}/Development/Editors/*
 %{_pixmapsdir}/*
