@@ -35,7 +35,7 @@ Glimmer jest prostym narzêdziem s³u¿±cym do edycji kodu ¼ród³owego.
 %build
 rm -f missing aclocal.m4
 %{__libtoolize}
-aclocal -I macros
+%{__aclocal} -I macros
 %{__autoconf}
 %{__automake}
 %configure \
