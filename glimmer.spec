@@ -2,7 +2,7 @@ Summary:	glimmer - simple code editor
 Summary(pl):	glimmer - prosty edytor kodu ¼ród³owego
 Name:		glimmer
 Version:	1.0.1
-Release:	2
+Release:	3
 LIcense:	GPL
 Group:		Development/Tools
 Group(de):	Entwicklung/Werkzeuge
@@ -13,7 +13,7 @@ URL:		http://glimmer.sourceforge.net/
 BuildRequires:	gnome-libs-devel
 BuildRequires:	ORBit-devel
 BuildRequires:	libstdc++-devel
-BuildRequires:	python-devel >= 2.0
+BuildRequires:	python-devel >= 2.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	CodeCommander-devel
 Obsoletes:	CodeCommander
