@@ -32,7 +32,6 @@ LATTE jest prostym narzêdziem s³u¿±cym do edycji kodu ¼ród³owego.
 %setup -q
 
 %build
-CXXFLAGS="%{rpmcflags} -fno-rtti -fno-exceptions"
 %configure \
 	--enable-gnome \
 	--disable-python
@@ -58,6 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/glimmer
-%{_datadir}/gnome/help/glimmer
 %{_applnkdir}/Development/Editors/*
 %{_pixmapsdir}/*
