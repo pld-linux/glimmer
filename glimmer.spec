@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		Development/Tools
 Source0:	http://download.sourceforge.net/glimmer/%{name}-%{version}.tar.gz
+# Source0-md5:	ca0a856b58f91b1bdef7f0828b31490a
 Patch0:		%{name}-desktop.patch
 URL:		http://glimmer.sourceforge.net/
 BuildRequires:	autoconf
