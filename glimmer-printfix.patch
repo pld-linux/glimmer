@@ -1,0 +1,12 @@
+diff -Nru glimmer-1.99.0.orig/configure.in glimmer-1.99.0/configure.in
+--- glimmer-1.99.0.orig/configure.in	2003-08-09 09:36:24.000000000 +0200
++++ glimmer-1.99.0/configure.in	2003-08-11 13:18:06.455165504 +0200
+@@ -41,7 +41,7 @@
+ VFS_REQUIRED=2.3.5
+ BONOBO_REQUIRED=2.3.3
+ GNOME_REQUIRED=2.3.3
+-PRINT_REQUIRED=2.3.1
++PRINT_REQUIRED=2.2.1
+ LIBGLADE_REQUIRED=2.0.1
+ EEL_REQUIRED=2.3.6
+ 
