@@ -11,6 +11,7 @@ URL:		http://glimmer.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	eel-devel >= 2.3.6
+BuildRequires:	gnome-common
 BuildRequires:	gtksourceview-devel >= 0.5.0
 BuildRequires:	libbonoboui-devel >= 2.3.3
 BuildRequires:	libgnomeprintui-devel >= 2.3.1
