@@ -35,8 +35,8 @@ LATTE jest prostym narzêdziem s³u¿±cym do edycji kodu ¼ród³owego.
 rm -f missing
 libtoolize --copy --force
 aclocal -I macros
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure \
 	--enable-gnome \
 	--disable-python
