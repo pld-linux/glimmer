@@ -36,7 +36,7 @@ rm -f missing
 libtoolize --copy --force
 aclocal -I macros
 autoconf
-automake -a -c
+automake -a -c -f
 %configure \
 	--enable-gnome \
 	--disable-python
