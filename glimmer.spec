@@ -17,11 +17,12 @@ BuildRequires:	libbonoboui-devel >= 2.3.3
 BuildRequires:	libgnomeprintui-devel >= 2.2.1
 BuildRequires:	libgnomeui-devel >= 2.3.3
 BuildRequires:	libtool
+Requires(post):	GConf2
+Requires(post):	/sbin/ldconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	CodeCommander-devel
 Obsoletes:	CodeCommander
 Obsoletes:	latte
-
 
 %description
 Glimmer is a simple text editing tool for editing nearly any type of
@@ -57,6 +58,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+/sbin/ldconfig
+%gconf_schema_install
+
+%postun -p /sbin/ldconfig
 
 %files -f %{name}-too.lang
 %defattr(644,root,root,755)
