@@ -11,7 +11,7 @@ URL:		http://glimmer.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	eel-devel >= 2.3.6
-BuildRequires:	gnome-common
+BuildRequires:	gnome-common >= 2.8.0
 BuildRequires:	gtksourceview-devel >= 0.5.0
 BuildRequires:	libbonoboui-devel >= 2.3.3
 BuildRequires:	libgnomeprintui-devel >= 2.3.1
@@ -38,7 +38,7 @@ Glimmer jest prostym narzêdziem s³u¿±cym do edycji kodu ¼ród³owego.
 rm -f missing aclocal.m4
 glib-gettextize --copy --force
 %{__libtoolize}
-%{__aclocal} -I %{_aclocaldir}/gnome2-macros
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure \
