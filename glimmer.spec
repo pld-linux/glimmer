@@ -51,8 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	desktopdir=%{_applnkdir}/Development/Editors
 
-gzip -9nf AUTHORS TODO README
-
 %find_lang %{name} --with-gnome
 
 %clean
@@ -60,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS README TODO ABOUT-NLS NEWS
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/glimmer/languages
 %{_datadir}/glimmer/scripts
