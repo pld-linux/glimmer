@@ -7,14 +7,13 @@ License:	GPL
 Group:		Development/Tools
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/1.99/%{name}-%{version}.tar.bz2
 # Source0-md5:	59d6324bab435f85f73b1ffb93afdcfe
-Patch0:		%{name}-printfix.patch
 URL:		http://glimmer.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	eel-devel >= 2.3.6
 BuildRequires:	gtksourceview-devel >= 0.5.0
 BuildRequires:	libbonoboui-devel >= 2.3.3
-BuildRequires:	libgnomeprintui-devel >= 2.2.1
+BuildRequires:	libgnomeprintui-devel >= 2.3.1
 BuildRequires:	libgnomeui-devel >= 2.3.3
 BuildRequires:	libtool
 Requires(post):	/sbin/ldconfig
@@ -33,7 +32,6 @@ Glimmer jest prostym narzêdziem s³u¿±cym do edycji kodu ¼ród³owego.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 rm -f missing aclocal.m4
