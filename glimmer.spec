@@ -3,7 +3,7 @@ Summary(pl):	glimmer - prosty edytor kodu ¼ród³owego
 Name:		glimmer
 Version:	1.0.8
 Release:	1
-LIcense:	GPL
+License:	GPL
 Group:		Development/Tools
 Group(de):	Entwicklung/Werkzeuge
 Group(fr):	Development/Outils
