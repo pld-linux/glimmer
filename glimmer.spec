@@ -1,18 +1,19 @@
 Summary:	glimmer - simple code editor
 Summary(pl):	glimmer - prosty edytor kodu ¼ród³owego
 Name:		glimmer
-Version:	1.0.8
+Version:	1.2.1
 Release:	1
 License:	GPL
 Group:		Development/Tools
 Source0:	http://download.sourceforge.net/glimmer/%{name}-%{version}.tar.gz
 URL:		http://glimmer.sourceforge.net/
-BuildRequires:	ORBit-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gnome-libs-devel
+BuildRequires:	gnome-vfs-devel > 1.0
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
+BuildRequires:	ORBit-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	CodeCommander-devel
 Obsoletes:	CodeCommander
@@ -22,17 +23,17 @@ Obsoletes:	latte
 %define		_pixmapsdir	%{_datadir}/pixmaps
 
 %description
-LATTE is a simple text editing tool for editing nearly any type of
+Glimmer is a simple text editing tool for editing nearly any type of
 source code.
 
 %description -l pl
-LATTE jest prostym narzêdziem s³u¿±cym do edycji kodu ¼ród³owego.
+Glimmer jest prostym narzêdziem s³u¿±cym do edycji kodu ¼ród³owego.
 
 %prep
 %setup -q
 
 %build
-rm -f missing
+rm -f missing aclocal.m4
 %{__libtoolize}
 aclocal -I macros
 %{__autoconf}
@@ -61,6 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/glimmer
+%{_datadir}/glimmer/languages
+%{_datadir}/glimmer/scripts
 %{_applnkdir}/Development/Editors/*
 %{_pixmapsdir}/*
