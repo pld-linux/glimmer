@@ -1,5 +1,5 @@
 Summary:	glimmer - simple code editor
-Summary(pl):	glimmer - prosty edytor kodu ¼ród³owego
+Summary(pl.UTF-8):   glimmer - prosty edytor kodu ÅºrÃ³dÅ‚owego
 Name:		glimmer
 Version:	1.99.0
 Release:	1
@@ -28,8 +28,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Glimmer is a simple text editing tool for editing nearly any type of
 source code.
 
-%description -l pl
-Glimmer jest prostym narzêdziem s³u¿±cym do edycji kodu ¼ród³owego.
+%description -l pl.UTF-8
+Glimmer jest prostym narzÄ™dziem sÅ‚uÅ¼Ä…cym do edycji kodu ÅºrÃ³dÅ‚owego.
 
 %prep
 %setup -q
