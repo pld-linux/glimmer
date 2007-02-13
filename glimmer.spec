@@ -1,5 +1,5 @@
 Summary:	glimmer - simple code editor
-Summary(pl.UTF-8):   glimmer - prosty edytor kodu źródłowego
+Summary(pl.UTF-8):	glimmer - prosty edytor kodu źródłowego
 Name:		glimmer
 Version:	1.99.0
 Release:	1
